@@ -51,7 +51,6 @@ packer.startup(function(use)
 	use("williamboman/mason.nvim")
 	use("simrat39/rust-tools.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
-	use("github/copilot.vim")
 
 	-- cmp
 	use("hrsh7th/nvim-cmp")
@@ -60,6 +59,7 @@ packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-nvim-lua")
 	use("saadparwaiz1/cmp_luasnip")
+	use("github/copilot.vim")
 
 	-- snippets
 	use({ "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" }) --snippet engine

@@ -36,7 +36,7 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Leader keymaps
-keymap("n", "<leader>e", ":NvimTreeToggle", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- keymap("n", "<leader>t", ":split<CR>:resize 20<CR>:term<CR>a", opts)
 
 -- Save and close file
