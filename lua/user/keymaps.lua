@@ -39,9 +39,8 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- keymap("n", "<leader>t", ":split<CR>:resize 20<CR>:term<CR>a", opts)
 
--- Save and close file
+-- Save file
 keymap("n", "<C-s>", ":lua vim.lsp.buf.formatting_sync()<CR>:w<CR>", opts)
-keymap("n", "<C-w>", ":q<CR>", opts)
 
 -- Terminal
 keymap("t", "<Esc>", "<C-\\><C-n>", term_opts)
@@ -49,3 +48,8 @@ keymap("t", "<Esc>", "<C-\\><C-n>", term_opts)
 -- Telescope
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>g", ":Telescope live_grep<CR>", opts)
+
+-- Bufferline
+keymap("n", "H", ":BufferLineCyclePrev<CR>", opts)
+keymap("n", "L", ":BufferLineCycleNext<CR>", opts)
+keymap("n", "<C-w>", ":w<CR>:Bdelete!<CR>", opts)

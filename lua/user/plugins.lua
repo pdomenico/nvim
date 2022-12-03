@@ -39,8 +39,6 @@ packer.init({
 packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
-	-- Plugins go here
-
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
 	use("lunarvim/darkplus.nvim")
@@ -87,10 +85,14 @@ packer.startup(function(use)
 	use("numToStr/Comment.nvim")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
-	-- null ls
-
 	-- toggleterm
 	use("akinsho/toggleterm.nvim")
+
+	-- bufferline
+	use "kyazdani42/nvim-web-devicons"
+	use "moll/vim-bbye"
+	use "akinsho/bufferline.nvim"
+
 
 	if packer_bootstrap then
 		require("packer").sync()
